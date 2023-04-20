@@ -31,30 +31,31 @@ public class App {
 
         */
 
-        /*
+
         System.out.println("Zadanie 3");
 
-        Float[] number = new Float[4];
-        number[0] =1.5f;
-        number[1] =2.5f;
-        number[2] =3.5f;
-        number[3] =4.5f;
+        Double[] number = new Double[4];
+        number[0] =1.5;
+        number[1] =2.5;
+        number[2] =3.5;
+        number[3] =4.5;
 
         System.out.println("SUM of all numbers in table");
 
-        Float suma = 0f;
+        Double suma = 0.0;
+        int iloscLiczb = number.length;
 
-        for (Float i=0f; i< number.length; i++){
+        for (int i=0; i< number.length; i++){
             suma = suma + number[i];
 
         }
         System.out.println(suma);
 
-        Float average = suma/number.length;
+        Double average = suma/number.length;
 
         System.out.println(average);
 
-
+        /*
         //Zadanie 4
 
         String[] names = new String[7];
@@ -79,6 +80,7 @@ public class App {
 
          */
 
+        /*
         //Zadanie 5
 
         String[] names = new String[7];
@@ -95,9 +97,37 @@ public class App {
             String imie = names[i];
             if (imie == "Jan") {
                 System.out.println("Imie Jan w tablicy wynosi ma numer: " + i);
-
             }
-        }
+
+         */
+        //Zadanie 6
+        Integer[] numbers = new Integer[5];
+        numbers[0] =9;
+        numbers[1] =1;
+        numbers[2] =20;
+        numbers[3] =2;
+        numbers[4] =7;
+
+         {
+            int max = numbers[0];
+             for (Integer i = 0; i < numbers.length; i++){
+             if (numbers[i] > max) {
+                 max = numbers[i];
+             }
+         }
+         System.out.println("Maksymalna wartość w tablicy to: " + max);
+
+             int min = numbers[0];
+             for (Integer i = 0; i < numbers.length; i++){
+                 if (numbers[i] < min) {
+                     min = numbers[i];
+                 }
+             }
+             System.out.println("Minimalna wartość w tablicy to: " + min);
+
+
+
+    }
 
 
 
