@@ -4,10 +4,8 @@ package org.example;
  * Hello world!
  *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
+public class App {
+    public static void main(String[] args) {
        /*
         String[] cities = new String[5];
         cities[0]="Warsaw";
@@ -33,6 +31,7 @@ public class App
 
         */
 
+        /*
         System.out.println("Zadanie 3");
 
         Float[] number = new Float[4];
@@ -54,21 +53,43 @@ public class App
         Float average = suma/number.length;
 
         System.out.println(average);
+        */
 
+        //Zadanie 4
 
+        String[] names = new String[7];
+        names[0] = "Jan";
+        names[1] = "Piotr";
+        names[2] = "Jan";
+        names[3] = "Karol";
+        names[4] = "Wojciech";
+        names[5] = "Jan";
+        names[6] = "Jan";
 
-
-
-
-
-
-
+        int liczbaImion = 0;
+        for (Integer i = 0; i < names.length; i++) {
+            String imie = names[i];
+            if (imie == "Jan") {
+                liczbaImion++;
+            }
         }
 
+        System.out.println("Liczba imion Jan w tablicy wynosi: " + liczbaImion);
 
-
+        //Zadanie 5
 
 
 
     }
+
+
+}
+
+
+
+
+
+
+
+
 
