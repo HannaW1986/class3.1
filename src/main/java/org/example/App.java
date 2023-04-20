@@ -53,7 +53,7 @@ public class App {
         Float average = suma/number.length;
 
         System.out.println(average);
-        */
+
 
         //Zadanie 4
 
@@ -76,7 +76,28 @@ public class App {
 
         System.out.println("Liczba imion Jan w tablicy wynosi: " + liczbaImion);
 
+
+         */
+
         //Zadanie 5
+
+        String[] names = new String[7];
+        names[0] = "Tomasz";
+        names[1] = "Piotr";
+        names[2] = "Jan";
+        names[3] = "Karol";
+        names[4] = "Wojciech";
+        names[5] = "Michal";
+        names[6] = "Adam";
+
+        int liczbaImion = 0;
+        for (Integer i = 0; i < names.length; i++) {
+            String imie = names[i];
+            if (imie == "Jan") {
+                System.out.println("Imie Jan w tablicy wynosi ma numer: " + i);
+
+            }
+        }
 
 
 
